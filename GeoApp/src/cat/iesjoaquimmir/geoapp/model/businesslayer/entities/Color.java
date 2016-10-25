@@ -34,17 +34,20 @@ public class Color {
     }
 
 //</editor-fold>
-/*
+    
 //<editor-fold defaultstate="collapsed" desc="metodos objeto">
     public String toRGBString(){
         throw new UnsupportedOperationException("Not yet implemented");
     }
     public String toHexString(boolean upper){
-        return String.format(upper ? "#%02X%02X%02X" : "#%02X%02X%02X",
+        return String.format(upper ? "#%02X%02X%02X" : "#%02x%02x%02x",
                         getRed(), getGreen(), getBlue());
     }
+    public String toHexString(){
+        return toHexString(true);
+    }
 //</editor-fold>
-*/
+
 //<editor-fold defaultstate="collapsed" desc="metodos estaticos">
     public static int getCounter() {    
         return counter;

@@ -209,8 +209,13 @@ public static void funcColorHexadecimal(){
 
 //<editor-fold defaultstate="collapsed" desc="Color aleaotori">
 public static void funcColorAleatori(){ 
-    Color col6=Color.getRandow();
-    System.out.printf("color aleatorio -> r: %d g: %d b: %d %n", col6.getRed(), col6.getGreen(), col6.getBlue()); 
+    Color co1=Color.getRandow();
+    
+    System.out.printf("color aleatorio -> r: %d g: %d b: %d %n", co1.getRed(), co1.getGreen(), co1.getBlue()); 
+    System.out.printf("color hexadecimal en mayuscula-> %s %n", co1.toHexString(true));
+    System.out.printf("color hexadecimal en minuscula-> %s %n", co1.toHexString(false));
+    System.out.printf("color hexadecimal en por defecto-> %s %n", co1.toHexString());
+    
 } 
 //</editor-fold>
         
